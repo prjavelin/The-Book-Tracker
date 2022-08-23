@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Book App</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <h1>Reading is Fun!</h1>
+    <p>Welcome to the Book Tracking App</p>
+    <h2>Find your next Great Read!</h2>
+    <!-- <input type="text" placeholder="search">  -->
+    
+
+    <form action="/getBook" method="PUT">
+      <input type="text" placeholder="Search..." name="todoItem">
+       <!-- <input type="submit">  -->
+        <input type="image" src="search-icon.png"/> 
+  </form>
+
+
+    
+
+
+  </div>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
